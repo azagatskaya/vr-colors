@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "IntroDemo-BlackCAPS";
+  src: url("../assets/fonts/Intro/IntroDemo-BlackCAPS.otf");
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+  .nav {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin: 3vh 5vh 7vh 15vh;
+  }
+  .main__h2 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 72px;
+  }
+  .text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .header__cart-btn {
+    width: 128px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+  .nav {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+  .text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .nav {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.99px) {
+  .container {
+    margin: 5vh 5vh 5vh 10vh;
+  }
+  .main__h2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .header__cart-btn {
+    width: 128px;
+  }
+}
+
+@media screen and (max-width: 575.99px) {
+  .container {
+    margin: 3vh 3vh 3vh 8vh;
+  }
+  .main__h2 {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .nav {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__cart-btn > .btn-sign {
+    display: none !important;
+  }
+  .header__cart-btn {
+    width: 38px;
+  }
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.header__logo,
+.btn,
+.main__h2,
+.header__logo,
+.h5-text {
+  font-family: "IntroDemo-BlackCAPS", serif;
+}
+
+.text {
+  font-family: "Roboto Slab", serif;
+}
+
+.header__logo {
+  font-size: 26px;
+  line-height: 48px;
+  color: black;
+  position: relative;
+}
+
+.header__logo::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../assets/icons/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  position: absolute;
+  top: -3px;
+  left: -50px;
+}
+
+.header__cart-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 38px;
+  font-size: 13px;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5222d0;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0px 4%;
+}
+
+.btn-sign {
+  margin-right: 5px;
+}
+
+.btn-icon {
+  margin: 5px 0 9px 0;
+}
+
+.nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item {
+  list-style-type: none;
+}
+
+.nav__item-link {
+  text-decoration: none;
+  color: #5222d0;
+}

@@ -1,0 +1,116 @@
+@import "style.scss";
+
+html,
+body {
+  height: 90%;
+  width: 100%;
+}
+body {
+  background-image: url("../assets/images/pic.svg");
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+  .main {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    height: 90vh;
+    background-size: 80vh;
+    background-position: right center;
+  }
+  .main {
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+  body {
+    height: 90vh;
+  }
+  .main {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main {
+    &__buy-btn {
+      height: 84px;
+      width: 270px;
+      font-size: 35px;
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+  .main {
+    width: 80%;
+    &__buy-btn {
+      height: 84px;
+      width: 270px;
+      font-size: 35px;
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.99px) and (orientation: landscape) {
+  body {
+    min-height: 180vh;
+  }
+  .main {
+    &__buy-btn {
+      height: 64px;
+      width: 200px;
+      font-size: 28px;
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.99px) and (orientation: portrait) {
+  body {
+    height: 90vh;
+  }
+  .main {
+    &__buy-btn {
+      height: 64px;
+      width: 200px;
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.99px) {
+  body {
+    background-size: 50vh;
+    background-position: right bottom;
+  }
+}
+@media screen and (max-width: 575.99px) {
+  body {
+    height: 97vh;
+    background-size: 40vh;
+    background-position: right bottom;
+  }
+  .main {
+    &__buy-btn {
+      height: 64px;
+      width: 200px;
+      font-size: 28px;
+    }
+  }
+}
+.main {
+  &__h2 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  &__text {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
