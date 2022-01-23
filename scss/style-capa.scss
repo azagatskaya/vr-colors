@@ -1,62 +1,71 @@
-@import "style.scss";
-
-.card__img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.card__img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
 }
-.h5-text{
-	font-family: "IntroDemo-BlackCAPS", serif;
-	font-size: 30px;
-	line-height: 36px;
+.h5-text {
+  font-family: "IntroDemo-BlackCAPS", serif;
+  font-size: 30px;
+  line-height: 36px;
 }
-.info__h5{
-	margin: 20px 0;
+.info__h5 {
+  margin: 15px 0;
 }
-.info__text{
-	margin: 10px 0;
+.info__text {
+  margin-bottom: 10px;
+  height: 160px;
 }
-.main{
-	&__row{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: flex-start;
-		padding-bottom: 60px;
-	}
-	&__card{
-		max-width: 365px;
-		min-height: 40%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		margin-bottom: 20px;
-	}
+.main {
+  height: 100%;
+  &__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &__card {
+    max-width: 365px;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
-
-.card__info{
-	min-height: 35vh;
+.subscribe {
+  background-color: rgba(236, 97, 91, 1);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  &__h5 {
+    color: white;
+    margin: 10px 0;
+  }
+  &__input-email {
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+  }
+  &__btn {
+    height: 38px;
+    margin-top: 30px;
+  }
 }
-.subscribe{
-	background-color: rgba(236, 97, 91, 1);
-	padding: 25px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	&__h5{
-		color: white;
-		margin: 10px 0;
-	}
-	&__input-email{
-		height: 50px;
-		width: 100%;
-		padding-left: 10px;
-	}
-	&__btn{
-		height: 38px;
-		margin-top: 30px;
-	}
+@media screen and (min-width: 768px){
+  .main {
+    &__row {
+      justify-content: space-between;
+    }
+  }
 }
-
+@media screen and (max-width: 767.99px){
+  .main {
+    &__h2{
+      text-align: center;
+    }
+    &__row {
+      justify-content: center;
+    }
+  }
+}

@@ -26,11 +26,11 @@ header,
 aside {
   display: block;
 }
-
 html,
 body {
-  //   height: 100%;
-  width: 100%;
+  margin: 0px;
+  height: 97vh;
+  width: 99%;
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
@@ -84,4 +84,11 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+p {
+  margin: 0px 0px 0px 0px;
+}
+ul{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }

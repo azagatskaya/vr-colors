@@ -1,188 +1,10 @@
-* {
-  padding: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus,
-:active {
-  outline: none;
-}
-
-a:focus,
-a:active {
-  outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-  display: block;
-}
-
-html,
-body {
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
 @font-face {
   font-family: "IntroDemo-BlackCAPS";
   src: url("../assets/fonts/Intro/IntroDemo-BlackCAPS.otf");
 }
 
-@media screen and (min-width: 1200px) {
-  .nav {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199.99px) {
-  .nav {
-    width: 65%;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .container {
-    margin: 3vh 5vh 7vh 15vh;
-  }
-  .main__h2 {
-    margin-bottom: 30px;
-    font-size: 60px;
-    line-height: 72px;
-  }
-  .text {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  .header__cart-btn {
-    width: 128px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991.99px) {
-  .nav {
-    width: 80%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .text {
-    font-size: 20px;
-    line-height: 32px;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767.99px) {
-  .text {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .nav {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 576px) and (max-width: 991.99px) {
-  .container {
-    margin: 5vh 5vh 5vh 10vh;
-  }
-  .main__h2 {
-    font-size: 56px;
-    line-height: 64px;
-  }
-  .header__cart-btn {
-    width: 128px;
-  }
-}
-
-@media screen and (max-width: 575.99px) {
-  .container {
-    margin: 3vh 3vh 3vh 8vh;
-  }
-  .main__h2 {
-    font-size: 38px;
-    line-height: 50px;
-  }
-  .text {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .nav {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .header__cart-btn > .btn-sign {
-    display: none !important;
-  }
-  .header__cart-btn {
-    width: 38px;
-  }
-}
-
 .container {
-  height: 100%;
+  min-height: 85%;
   position: relative;
 }
 
@@ -256,10 +78,8 @@ h6 {
 }
 
 .nav {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-top: 0;
+  height: 65px;
+  margin-top: 10px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,4 +103,112 @@ h6 {
 .nav__item-link {
   text-decoration: none;
   color: #5222d0;
+}
+
+@media screen and (min-width: 576px) {
+  .main__h2 {
+    margin: 30px 0;
+  }
+  .main__text {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin: 3vh 5vh 0 15vh;
+  }
+  .nav {
+    margin-left: 15vh;
+    width: 65%;
+  }
+  .main__h2 {
+    font-size: 60px;
+    line-height: 72px;
+  }
+  .text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .header__cart-btn {
+    width: 128px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+  .nav {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+  .text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .nav {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.99px) {
+  .container {
+    margin: 3vh 5vh 0 10vh;
+  }
+  .nav {
+    margin-left: 10vh;
+  }
+  .main__h2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .header__cart-btn {
+    width: 128px;
+  }
+}
+
+@media screen and (max-width: 575.99px) {
+  .container {
+    margin: 3vh;
+  }
+  .nav {
+    margin-left: 3vh;
+  }
+  .header__logo {
+    margin-left: calc(3vh + 32px);
+  }
+  .main__h2 {
+    margin: 15px 0px;
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .text {
+    max-width: 10px 0px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .nav {
+    width: 90vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__cart-btn > .btn-sign {
+    display: none !important;
+  }
+  .header__cart-btn {
+    width: 38px;
+  }
 }
